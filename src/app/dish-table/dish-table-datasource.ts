@@ -7,31 +7,22 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 export interface DishTableItem {
   name: string;
   id: number;
+  price: number;
 }
 
 // TODO: replace this with real data from your application
-const EXAMPLE_DATA: DishTableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
-];
+  const EXAMPLE_DATA: DishTableItem[] = [
+    {id: 1, name: 'boeuf carottes', price: 8.80},
+    {id: 2, name: 'brandade de morue', price: 9.90},
+    {id: 3, name: 'faux-filet sauce marchand de vin', price: 12.50},
+    {id: 4, name: 'galette complète', price: 6.40},
+    {id: 5, name: 'salade lyonnaise', price: 7.80},
+    {id: 6, name: 'joues de porc au cidre', price: 13.50},
+    {id: 7, name: 'salade au foie de volaille', price: 6.80},
+    {id: 8, name: 'cotelettes d\'agneau', price: 13.80},
+    {id: 9, name: 'salade de riz', price: 6.90},
+    {id: 10, name: 'escalope de poulet / boulgour', price: 9.80}
+  ];
 
 /**
  * Data source for the DishTable view. This class should
