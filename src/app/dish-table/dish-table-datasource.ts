@@ -7,11 +7,12 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 export interface DishTableItem {
   name: string;
   id: number;
-  price: number;
+  price?: number;
 }
 
 // TODO: replace this with real data from your application
   const EXAMPLE_DATA: DishTableItem[] = [
+
     {id: 1, name: 'boeuf carottes', price: 8.80},
     {id: 2, name: 'brandade de morue', price: 9.90},
     {id: 3, name: 'faux-filet sauce marchand de vin', price: 12.50},
@@ -87,6 +88,7 @@ export class DishTableDataSource extends DataSource<DishTableItem> {
       switch (this.sort.active) {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'price': return compare(+a.price, +b.price, isAsc);
         default: return 0;
       }
     });

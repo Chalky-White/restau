@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarteComponent implements OnInit {
 
-  dogs = [
-    { race: 'berger allemand', name: 'dingo'},
-    { race: 'épagneul', name: 'médor'},
-    { race: 'caniche', name: 'Peter'},
-    { race: 'labrador', name: 'Fonzy'}
+  menus = [
+    { entrée: 'carottes rappées', resistance: 'steak frites'},
+    { entrée: 'tartare de saumon', resistance: 'grande salade de chèvre'},
+    { entrée: 'salade niçoise', resistance: 'haricotse & côte de porc'},
+    { entrée: 'potage', resistance: 'fondue savoyarde'}
   ];
 
   constructor() { }

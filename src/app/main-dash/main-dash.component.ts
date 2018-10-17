@@ -13,18 +13,18 @@ export class MainDashComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'A la Carte', cols: 1, rows: 1 },
-          { title: 'Burgers', cols: 1, rows: 1 },
-          { title: 'Galettes & Crêpes', cols: 1, rows: 1 },
-          { title: 'Pizzas', cols: 1, rows: 1 }
+          { title: 'A la Carte', cols: 2, rows: 1 },
+          { title: 'Burgers', cols: 2, rows: 1 },
+          { title: 'Galettes & Crêpes', cols: 2, rows: 1 },
+          { title: 'Pizzas', cols: 2, rows: 1 }
         ];
       }
 
       return [
         { title: 'A la Carte', cols: 2, rows: 1 },
-        { title: 'Burgers', cols: 1, rows: 1 },
-        { title: 'Galettes & Crêpes', cols: 1, rows: 2 },
-        { title: 'Pizzas', cols: 1, rows: 1 }
+        { title: 'Burgers', cols: 2, rows: 1 },
+        { title: 'Galettes & Crêpes', cols: 2, rows: 2 },
+        { title: 'Pizzas', cols: 2, rows: 1 }
       ];
     })
   );
